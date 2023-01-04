@@ -7,7 +7,7 @@
 nav {
     display: flex;
     justify-content: space-between;
-    margin: 50px 200px;
+    padding: 50px 200px;
 }
 .nav-title {
     font-weight: 800;
@@ -63,5 +63,5 @@ nav li{
 .banner-description {
     color: #757575;
     font-size: 18px;
-    margin-bottom:30px;
+    margin-bottom: 30px;
 }
