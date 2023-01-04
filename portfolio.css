@@ -49,11 +49,11 @@ nav li{
 }
 .banner-title {
     font-weight: 700;
-    font-size: 55px;
+    font-size: 75px;
 }
 .banner-sub-title {
     font-weight: 600;
-    font-size: 35px;
+    font-size: 45px;
     margin-bottom: 20px;
 }
 .front {
@@ -64,4 +64,42 @@ nav li{
     color: #757575;
     font-size: 18px;
     margin-bottom: 30px;
+}
+/* main section */
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.about {
+    margin-top: 130px;
+    background: #FFF8F3;
+    border-radius: 10px;
+    text-align: center;
+    padding: 130px 150px;
+}
+/* about section styles */
+.section-title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 35px;
+}
+.section-description{
+    color:#757575;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.about-info-container{
+    display: flex;
+    justify-content: space-between;
+}
+.info-title {
+    color: #757575;
+    font-size: 20px;
+    font-weight: 400;
+}
+.info-description{
+    color: #474747;
+    font-weight: 700;
+    font-size: 20px;
 }
