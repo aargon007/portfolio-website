@@ -175,7 +175,7 @@ section {
 /* footer styles */
 .contact {
     display: flex;
-    gap:100px;
+    gap: 100px;
     background: #FFF8F3;
     padding: 130px 200px;
 }
