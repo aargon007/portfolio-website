@@ -200,3 +200,38 @@ section {
 input{
     height: 64px;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    *::after{
+        content: " ";
+        clear: both;
+        display: table;
+    }
+    .header{
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+    .header nav, .header .banner, .skills-container, .resume-content, .contact{
+        display: inline-flex;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+    .about-info-container{
+        display: inline-block;
+        text-align: left;
+    }
+    .about-info-container .about-info{
+        padding: 10px;
+        margin: 10px;
+    }
+    .about-info-container p{
+        display: inline;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
