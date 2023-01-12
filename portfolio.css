@@ -222,7 +222,7 @@ input{
         height: 100%;
     }
     .banner{
-        margin: 0 20px;
+        margin: 0 10px;
     }
     .banner-title{
         font-size: 10vw;
@@ -270,12 +270,12 @@ input{
         margin: 0 10px;
     }
     .banner-title{
-        font-size: 9vw;
+        font-size: 10vw;
     }
     .banner-sub-title, .nav-title{
-        font-size: 6vw;
+        font-size: 8vw;
     }
-    .banner-description{
+    .banner-description, nav li{
         font-size: 3vw;
     }
     .about, .contact{
