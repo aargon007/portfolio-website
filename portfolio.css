@@ -212,6 +212,11 @@ input{
     .header {
         background-image: none;
     }
+    .btn-primary {
+    height: 40px;
+    font-size: 4vw;
+    padding: 10px;
+    }
     .banner img{
         width: 100%;
         height: 100%;
@@ -220,13 +225,13 @@ input{
         margin: 0 20px;
     }
     .banner-title{
-        font-size: 15vw;
-    }
-    .banner-sub-title, .nav-title{
         font-size: 10vw;
     }
+    .banner-sub-title, .nav-title{
+        font-size: 8vw;
+    }
     .banner-description{
-        font-size: 5vw;
+        font-size: 4vw;
     }
     .about {
         padding: 10px;
@@ -250,11 +255,12 @@ input{
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
     nav li{
-        margin-left: 10px;
+        margin-left: 0;
     }
     nav ul{
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
         gap: 10px;
     }
     .header {
@@ -264,21 +270,25 @@ input{
         margin: 0 10px;
     }
     .banner-title{
-        font-size: 10vw;
+        font-size: 9vw;
     }
     .banner-sub-title, .nav-title{
-        font-size: 7vw;
+        font-size: 6vw;
     }
     .banner-description{
-        font-size: 4vw;
+        font-size: 3vw;
     }
     .about, .contact{
         padding: 20px;
     }
-    .contact, .banner, .skills-container, nav{
+    .contact, .banner, nav, .resume-content{
         flex-direction: column;
         gap: 20px;
         padding: 10px 20px;
+    }
+    .about-info-container, .skills-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
     .contact input[type="text"], input[type="email"], textarea{
         padding: 0 0 0 10px;
