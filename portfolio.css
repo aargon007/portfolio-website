@@ -201,124 +201,86 @@ input{
     height: 64px;
 }
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .header{
-        display: inline-flex;
-        flex-wrap: wrap;
-        background-image: none;
-        background-color:  #FFF8F3 ;
-    }
-    
-    .header nav,  .skills-container, .resume-content {
-        display: inline-flex;
-        flex-wrap: wrap;
-    }
-
-    nav {
-        padding: 30px 35px;
-    }
-
-    .nav-title {
-        font-weight: 700;
-        font-size: 30px;
-    }
+@media screen and (max-width: 576px){
     nav li{
-        margin-left: 30px;
+        margin-left: 10px;
     }
-    .btn-primary{
-        font-size: 20px;
-        padding: 15px 15px;
-        height: 55px;
+    nav ul{
+        flex-direction: row;
+        gap: 10px;
     }
-    /* banner -responsive */
-    .banner {
-        margin: 0 30px;
-    }
-    .banner-title {
-        font-weight: 700;
-        font-size: 25px;
-    }
-    .banner-sub-title {
-        font-weight: 600;
-        font-size: 22px;
-        margin-bottom: 20px;
-    }
-    .front {
-        margin: 10px 0;
-        font-size: 20px;
-    }
-    .banner-description {
-        color: #757575;
-        font-size: 18px;
-        margin-bottom: 30px;
+    .header {
+        background-image: none;
     }
     .banner img{
-        width: 200px;
-        height: 200px;
+        width: 100%;
+        height: 100%;
     }
-    /* about info */
-    section {
-        margin-top: 20;
+    .banner{
+        margin: 0 20px;
+    }
+    .banner-title{
+        font-size: 15vw;
+    }
+    .banner-sub-title, .nav-title{
+        font-size: 10vw;
+    }
+    .banner-description{
+        font-size: 5vw;
     }
     .about {
-        margin-top: 10px;
-        padding: 20px 20px;
-        text-align: justify;
-    }
-    /* about section styles */
-    .section-title {
-        margin-bottom: 20px;
-        font-size: 30px;
-    }
-    .section-description{
-        font-size: 18px;
-        margin-bottom: 30px;
-    }
-    .about-info-container{
-        display: inline-block;
-        text-align: left;
-    }
-    .about-info-container .about-info{
         padding: 10px;
-        margin: 10px;
     }
-    .about-info-container p{
-        display: inline;
-    }
-
-    /* what i do styles */
-    .what-i-do{
-        margin-top: 30px;
-    }
-    .resume-title{
-        text-align: center;
-    }
-    .resume-item {
-        margin-left: 15px;
-    }
+    nav,
+    .banner,
+    .skills-container, 
+    .resume-content, 
+    .about-info-container, 
     .contact{
-        gap: 20px;
-        padding: 30px 20px;
+        flex-direction: column;
+        padding: 10px 20px;
+        gap: 10px;
     }
-    .contact .section-title {
-        color: #181818;
-        font-size: 25px;
-        text-align: left;
+    .contact input[type="text"], 
+    input[type="email"], 
+    textarea{
+        padding: 0 0 0 10px;
     }
-    .contact input[type="text"], input[type="email"], textarea {
-        margin-bottom: 24px;
-        border: 0;
-        width: 50%;
-        padding:18px 30px;
-    }
-    input{
-        height: 4px;
-    }
-
+    
 }
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {...} */
-
-/* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 768px) {...} */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    nav li{
+        margin-left: 10px;
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .header {
+        background-image: none;
+    }
+    .banner{
+        margin: 0 10px;
+    }
+    .banner-title{
+        font-size: 10vw;
+    }
+    .banner-sub-title, .nav-title{
+        font-size: 7vw;
+    }
+    .banner-description{
+        font-size: 4vw;
+    }
+    .about, .contact{
+        padding: 20px;
+    }
+    .contact, .banner, .skills-container, nav{
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 20px;
+    }
+    .contact input[type="text"], input[type="email"], textarea{
+        padding: 0 0 0 10px;
+    }
+}
